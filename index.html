@@ -5,8 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Interfaith Sanctuary — A House for Every Path</title>
 <meta name="description" content="A non-denominational sanctuary built on seven shared principles, holding space for every tradition and for the shadow every tradition names.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#181A2E">
+<link rel="canonical" href="https://interfaith-sanctuary.org/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Interfaith Sanctuary">
+<meta property="og:title" content="Interfaith Sanctuary — A House for Every Path">
+<meta property="og:description" content="A non-denominational sanctuary built on seven shared principles, holding space for every tradition — and for the shadow every tradition names.">
+<meta property="og:url" content="https://interfaith-sanctuary.org/">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Interfaith Sanctuary — A House for Every Path">
+<meta name="twitter:description" content="A non-denominational sanctuary built on seven shared principles — for every path.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Interfaith Sanctuary",
+  "url": "https://interfaith-sanctuary.org/",
+  "description": "A non-denominational interfaith sanctuary built on seven shared principles inspired by the Noahide ethic, holding space for every religious tradition and for people who are still searching.",
+  "email": "interfaith-sanctuary@protonmail.com",
+  "sameAs": [
+    "https://get-out-now.org/",
+    "https://thelastdate.org/",
+    "https://projectshreeram.org/",
+    "https://1in56million.org/",
+    "https://crypto-jews.org/"
+  ]
+}
+</script>
 <style>
   :root{
     --dusk-deep:#181A2E;
@@ -730,9 +766,19 @@
     color:rgba(242,234,217,0.6);
   }
 
+  .skip-link{
+    position:absolute; left:-999px; top:0; z-index:1000;
+    background:var(--gold); color:var(--dusk-deep);
+    padding:10px 16px; border-radius:2px;
+    font-family:'Jost',sans-serif; font-size:0.9rem; text-decoration:none;
+  }
+  .skip-link:focus{left:12px; top:12px;}
+
 </style>
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- ===================== LANGUAGE TRANSLATION ===================== -->
 <div class="lang-switch">
@@ -741,6 +787,7 @@
 </div>
 
 <!-- ===================== HERO ===================== -->
+<main id="main">
 <div class="hero">
   <div class="hero-inner">
     <svg class="hero-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
@@ -1030,6 +1077,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- ===================== FOOTER ===================== -->
 <footer>
