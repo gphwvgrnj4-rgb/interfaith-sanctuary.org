@@ -1050,6 +1050,10 @@
            href="https://wa.me/?text=A%20sanctuary%20built%20on%20seven%20shared%20principles%20—%20for%20every%20path.%20https://interfaith-sanctuary.org">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
         </a>
+        <a class="share-btn" id="ig-share" aria-label="Share on Instagram" target="_blank" rel="noopener"
+           href="https://www.instagram.com/">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.8c-3.15 0-3.5.01-4.74.07-.9.04-1.38.19-1.71.32-.43.17-.74.36-1.06.68-.32.32-.51.63-.68 1.06-.13.33-.28.81-.32 1.71-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.9.19 1.38.32 1.71.17.43.36.74.68 1.06.32.32.63.51 1.06.68.33.13.81.28 1.71.32 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.9-.04 1.38-.19 1.71-.32.43-.17.74-.36 1.06-.68.32-.32.51-.63.68-1.06.13-.33.28-.81.32-1.71.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.9-.19-1.38-.32-1.71a2.85 2.85 0 0 0-.68-1.06 2.85 2.85 0 0 0-1.06-.68c-.33-.13-.81-.28-1.71-.32-1.24-.06-1.59-.07-4.74-.07Zm0 3.06A4.98 4.98 0 1 1 7.02 12 4.98 4.98 0 0 1 12 7.02Zm0 1.8A3.18 3.18 0 1 0 15.18 12 3.18 3.18 0 0 0 12 8.82Zm5.19-3.2a1.16 1.16 0 1 1-1.16 1.16 1.16 1.16 0 0 1 1.16-1.16Z"/></svg>
+        </a>
         <a class="share-btn" aria-label="Share by Email"
            href="mailto:?subject=Interfaith%20Sanctuary&body=A%20sanctuary%20built%20on%20seven%20shared%20principles%20—%20for%20every%20path.%20https://interfaith-sanctuary.org">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0l8 6 8-6H4zm16 2.24l-8 6-8-6V18h16V8.24z"/></svg>
@@ -1063,6 +1067,27 @@
   </div>
 </footer>
 
+<script>
+  // Instagram has no web share-link intent, so use the Web Share API (opens the
+  // Instagram app's share sheet on mobile → Add to Story / profile / message).
+  // Fallback (desktop / unsupported): copy the link and open Instagram.
+  (function(){
+    var btn = document.getElementById('ig-share');
+    if(!btn){ return; }
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      var url = window.location.href || 'https://interfaith-sanctuary.org/';
+      var text = 'A sanctuary built on seven shared principles — for every path.';
+      if(navigator.share){
+        navigator.share({ title: document.title, text: text, url: url }).catch(function(){});
+      } else {
+        if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).catch(function(){}); }
+        window.open('https://www.instagram.com/', '_blank', 'noopener');
+        alert('Link copied — open Instagram and paste it into your story, profile, or a message.');
+      }
+    });
+  })();
+</script>
 <script type="text/javascript">
   function googleTranslateElementInit() {
     new google.translate.TranslateElement(
