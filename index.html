@@ -1082,8 +1082,8 @@
         navigator.share({ title: document.title, text: text, url: url }).catch(function(){});
       } else {
         if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).catch(function(){}); }
-        window.open('https://www.instagram.com/', '_blank', 'noopener');
         alert('Link copied — open Instagram and paste it into your story, profile, or a message.');
+        window.open('https://www.instagram.com/', '_blank', 'noopener');
       }
     });
   })();
