@@ -118,13 +118,17 @@
   .reveal.in{opacity:1; transform:none;}
   @media(prefers-reduced-motion:reduce){
     .reveal{opacity:1 !important; transform:none !important; transition:none;}
-    .hero-mark{animation:none !important;}
+    .hero-mark,.hero h1,.hero p.lede,.hero-ctas{animation:none !important;}
     html{scroll-behavior:auto;}
   }
 
   /* ---------- FLOAT ---------- */
   @keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+  @keyframes floaty-sm{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
   .hero-mark{animation:floaty 6s ease-in-out infinite;}
+  .hero h1{animation:floaty-sm 7s ease-in-out infinite;}
+  .hero p.lede{animation:floaty-sm 7.6s ease-in-out .3s infinite;}
+  .hero-ctas{animation:floaty 8.4s ease-in-out .6s infinite;}
 
   /* ---------- UNIFIED SHARE ---------- */
   .share{display:flex; align-items:center; justify-content:center; gap:.55rem; flex-wrap:wrap;}
@@ -148,7 +152,7 @@
   .hero-inner{
     position:relative;
     width:100%;
-    padding:80px 28px 64px;
+    padding:80px 28px clamp(104px,15vh,150px);
     color:var(--parchment);
     text-align:center;
   }
