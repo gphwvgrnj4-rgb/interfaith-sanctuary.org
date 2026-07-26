@@ -57,6 +57,20 @@
   footer{background:var(--dusk-deep);color:var(--parchment);padding:2rem 0;margin-top:auto;}
   footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;justify-content:space-between;align-items:center;font-size:.85rem;}
   footer a{color:var(--gold-soft);}
+
+  /* google translate (styled) */
+  .gtrans{display:inline-flex;align-items:center;gap:.4rem;}
+  .gtrans .globe{color:var(--gold-soft);flex:0 0 auto;}
+  .goog-te-gadget{font-family:'Jost',sans-serif!important;font-size:0!important;color:transparent!important;line-height:1!important;}
+  .goog-te-gadget .goog-te-combo{margin:0!important;}
+  .goog-te-combo{background:transparent!important;border:1px solid var(--line)!important;border-radius:20px!important;color:var(--parchment)!important;font-family:'Jost',sans-serif!important;font-size:.75rem!important;letter-spacing:.04em;padding:.34rem .55rem!important;cursor:pointer;outline:none;max-width:150px;}
+  .goog-te-combo:hover{border-color:var(--gold)!important;}
+  .goog-te-combo option{color:#1F1B29;background:#F2EAD9;}
+  .goog-te-gadget-icon,.goog-logo-link,.goog-te-gadget>span{display:none!important;}
+  body{top:0!important;}
+  .goog-te-banner-frame,.skiptranslate>iframe{display:none!important;visibility:hidden!important;height:0!important;}
+  #goog-gt-tt,.goog-te-balloon-frame{display:none!important;}
+  font[style]{background:transparent!important;box-shadow:none!important;}
 </style>
 </head>
 <body>
@@ -65,7 +79,7 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><circle cx="12" cy="12" r="9.3"/><path d="M12 3.2 L12 20.8 M4.4 8 L19.6 8 M4.4 16 L19.6 16" stroke-opacity="0.7"/></svg>
     <span>Interfaith Sanctuary</span>
   </a>
-  <a class="back" href="/">← Home</a>
+  <div class="gtrans" title="Translate this page"><svg class="globe" aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18"/><path d="M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg><div id="google_translate_element"></div></div><a class="back" href="/" style="margin-inline-start:1rem">← Home</a>
 </nav>
 <main>
   <div class="thanks-hero">
@@ -107,5 +121,7 @@
     <a class="fm-proj" href="/projects" style="color:var(--gold-soft);text-decoration:none">Projects</a> <a href="mailto:interfaith-sanctuary@protonmail.com">interfaith-sanctuary@protonmail.com</a>
   </div>
 </footer>
+<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:"en",autoDisplay:false},"google_translate_element");}</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

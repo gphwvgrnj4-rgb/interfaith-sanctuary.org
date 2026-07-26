@@ -8,18 +8,6 @@
 <link rel="canonical" href="https://interfaith-sanctuary.org/">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#181A2E">
-<link rel="alternate" hreflang="en" href="https://interfaith-sanctuary.org/">
-<link rel="alternate" hreflang="es" href="https://interfaith-sanctuary.org/es/">
-<link rel="alternate" hreflang="fr" href="https://interfaith-sanctuary.org/fr/">
-<link rel="alternate" hreflang="de" href="https://interfaith-sanctuary.org/de/">
-<link rel="alternate" hreflang="pt" href="https://interfaith-sanctuary.org/pt/">
-<link rel="alternate" hreflang="ru" href="https://interfaith-sanctuary.org/ru/">
-<link rel="alternate" hreflang="ar" href="https://interfaith-sanctuary.org/ar/">
-<link rel="alternate" hreflang="zh" href="https://interfaith-sanctuary.org/zh/">
-<link rel="alternate" hreflang="hi" href="https://interfaith-sanctuary.org/hi/">
-<link rel="alternate" hreflang="he" href="https://interfaith-sanctuary.org/he/">
-<link rel="alternate" hreflang="ur" href="https://interfaith-sanctuary.org/ur/">
-<link rel="alternate" hreflang="x-default" href="https://interfaith-sanctuary.org/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Interfaith Sanctuary">
 <meta property="og:title" content="Interfaith Sanctuary — A House for Every Path">
@@ -863,6 +851,20 @@
     .tradition-chip,.ripple-diagram,.wheel-center,.wheel-ring,.gr-card,.rule-card,.reading-reel .book-plate{animation:none !important;}
     .wheel-dots{display:none;}
   }
+
+  /* google translate (styled) */
+  .gtrans{display:inline-flex;align-items:center;gap:.4rem;}
+  .gtrans .globe{color:var(--gold-soft);flex:0 0 auto;}
+  .goog-te-gadget{font-family:'Jost',sans-serif!important;font-size:0!important;color:transparent!important;line-height:1!important;}
+  .goog-te-gadget .goog-te-combo{margin:0!important;}
+  .goog-te-combo{background:transparent!important;border:1px solid var(--line)!important;border-radius:20px!important;color:var(--parchment)!important;font-family:'Jost',sans-serif!important;font-size:.75rem!important;letter-spacing:.04em;padding:.34rem .55rem!important;cursor:pointer;outline:none;max-width:150px;}
+  .goog-te-combo:hover{border-color:var(--gold)!important;}
+  .goog-te-combo option{color:#1F1B29;background:#F2EAD9;}
+  .goog-te-gadget-icon,.goog-logo-link,.goog-te-gadget>span{display:none!important;}
+  body{top:0!important;}
+  .goog-te-banner-frame,.skiptranslate>iframe{display:none!important;visibility:hidden!important;height:0!important;}
+  #goog-gt-tt,.goog-te-balloon-frame{display:none!important;}
+  font[style]{background:transparent!important;box-shadow:none!important;}
 </style>
 </head>
 <body>
@@ -881,24 +883,7 @@
     <a href="#reading">Recommended Reading</a>
     <a href="#join" class="nav-cta">Sign the Guestbook</a>
   </div>
-  <div class="langpick" id="langpick">
-    <button class="langpick-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language">
-      <svg class="globe" aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18"/><path d="M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>
-      <span class="langpick-cur">EN</span><span class="langpick-caret" aria-hidden="true">▾</span>
-    </button>
-    <div class="langpick-menu" role="listbox">
-      <a href="/" hreflang="en" class="active" aria-current="true">English</a>
-      <a href="/es/" hreflang="es">Español</a>
-      <a href="/fr/" hreflang="fr">Français</a>
-      <a href="/de/" hreflang="de">Deutsch</a>
-      <a href="/pt/" hreflang="pt">Português</a>
-      <a href="/ru/" hreflang="ru">Русский</a>
-      <a href="/ar/" hreflang="ar" dir="rtl">العربية</a>
-      <a href="/zh/" hreflang="zh">中文</a>
-      <a href="/hi/" hreflang="hi">हिन्दी</a>
-      <a href="/he/" hreflang="he" dir="rtl">עברית</a><a href="/ur/" hreflang="ur" dir="rtl">اردو</a>
-    </div>
-  </div>
+  <div class="gtrans" title="Translate this page"><svg class="globe" aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18"/><path d="M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg><div id="google_translate_element"></div></div>
   <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
     <span></span><span></span><span></span>
   </button>
@@ -1298,5 +1283,7 @@
   var rt; window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){stop();start();},200);});
 })();
 </script>
+<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:"en",autoDisplay:false},"google_translate_element");}</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
