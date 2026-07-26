@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interfaith Sanctuary — Ein Haus für jeden Weg</title>
+<meta name="description" content="Ein konfessionsübergreifender Zufluchtsort, getragen von sieben gemeinsamen Prinzipien – Raum für jede Tradition und für den Schatten, den jede Tradition benennt.">
+<link rel="canonical" href="https://interfaith-sanctuary.org/de/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#181A2E">
+<link rel="alternate" hreflang="en" href="https://interfaith-sanctuary.org/">
+<link rel="alternate" hreflang="es" href="https://interfaith-sanctuary.org/es/">
+<link rel="alternate" hreflang="fr" href="https://interfaith-sanctuary.org/fr/">
+<link rel="alternate" hreflang="de" href="https://interfaith-sanctuary.org/de/">
+<link rel="alternate" hreflang="pt" href="https://interfaith-sanctuary.org/pt/">
+<link rel="alternate" hreflang="ru" href="https://interfaith-sanctuary.org/ru/">
+<link rel="alternate" hreflang="ar" href="https://interfaith-sanctuary.org/ar/">
+<link rel="alternate" hreflang="zh" href="https://interfaith-sanctuary.org/zh/">
+<link rel="alternate" hreflang="hi" href="https://interfaith-sanctuary.org/hi/">
+<link rel="alternate" hreflang="he" href="https://interfaith-sanctuary.org/he/">
+<link rel="alternate" hreflang="x-default" href="https://interfaith-sanctuary.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Interfaith Sanctuary">
+<meta property="og:title" content="Interfaith Sanctuary — Ein Haus für jeden Weg">
+<meta property="og:description" content="Ein konfessionsübergreifender Zufluchtsort, getragen von sieben gemeinsamen Prinzipien — Raum für jede Tradition und für den Schatten, den jede Tradition benennt.">
+<meta property="og:url" content="https://interfaith-sanctuary.org/de/">
+<meta property="og:image" content="https://interfaith-sanctuary.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Interfaith Sanctuary — sieben gemeinsame Prinzipien, ein Tisch">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Interfaith Sanctuary — Ein Haus für jeden Weg">
+<meta name="twitter:description" content="Sieben gemeinsame Prinzipien. Jede Tradition willkommen.">
+<meta name="twitter:image" content="https://interfaith-sanctuary.org/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://interfaith-sanctuary.org/#org","name":"Interfaith Sanctuary","url":"https://interfaith-sanctuary.org/","email":"interfaith-sanctuary@protonmail.com","description":"A non-denominational sanctuary built on seven shared principles, welcoming every tradition and the still-searching.","slogan":"A House for Every Path"},{"@type":"WebSite","@id":"https://interfaith-sanctuary.org/#site","url":"https://interfaith-sanctuary.org/","name":"Interfaith Sanctuary","inLanguage":"en","publisher":{"@id":"https://interfaith-sanctuary.org/#org"}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --dusk-deep:#181A2E;
+    --dusk-mid:#332C55;
+    --dusk-soft:#4A3F6E;
+    --gold:#C79A4B;
+    --gold-soft:#E4C687;
+    --rust:#9C4E2A;
+    --parchment:#F2EAD9;
+    --parchment-dim:#E7DCC4;
+    --ink:#1F1B29;
+    --ink-soft:#4A4459;
+    --line: rgba(199,154,75,0.35);
+    --radius-lg: 2px;
+    --max-w: 1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--parchment);
+    color:var(--ink);
+    font-family:'Crimson Pro', serif;
+    font-size:18px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    letter-spacing:0.01em;
+    color:var(--ink);
+    margin:0;
+  }
+  .eyebrow{
+    font-family:'Jost', sans-serif;
+    font-size:0.72rem;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:var(--rust);
+    font-weight:600;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:var(--max-w); margin:0 auto; padding:0 28px;}
+
+  /* ---------- SITE NAV ---------- */
+  .site-nav{position:fixed; top:0; left:0; right:0; z-index:70;
+    display:flex; align-items:center; gap:1rem;
+    padding:14px clamp(18px,5vw,40px);
+    transition:background .3s ease, box-shadow .3s ease, padding .3s ease;}
+  .site-nav.scrolled{background:rgba(24,26,46,0.92); backdrop-filter:blur(10px);
+    box-shadow:0 1px 0 var(--line); padding-top:10px; padding-bottom:10px;}
+  .site-nav .nav-brand{display:flex; align-items:center; gap:.55rem;
+    text-decoration:none; margin-right:auto; color:var(--parchment);}
+  .site-nav .nav-brand svg{width:26px; height:26px; color:var(--gold-soft);}
+  .site-nav .nav-brand span{font-family:'Cormorant Garamond',serif; font-weight:600;
+    font-size:1.15rem; letter-spacing:.02em;}
+  .nav-links{display:flex; align-items:center; gap:1.6rem;}
+  .nav-links a{font-family:'Jost',sans-serif; font-size:.8rem; letter-spacing:.08em;
+    text-transform:uppercase; text-decoration:none; color:var(--parchment);
+    opacity:.85; transition:opacity .2s, color .2s;}
+  .nav-links a:hover{opacity:1; color:var(--gold-soft);}
+  .nav-links a.nav-cta{border:1px solid var(--line); border-radius:40px;
+    padding:.5rem 1.1rem; color:var(--gold-soft);}
+  .nav-links a.nav-cta:hover{background:var(--gold); color:var(--dusk-deep); border-color:var(--gold);}
+  .nav-toggle{display:none; background:none; border:0; cursor:pointer; padding:6px;
+    flex-direction:column; gap:5px; margin-left:auto;}
+  .nav-toggle span{display:block; width:24px; height:2px; background:var(--parchment);
+    transition:transform .3s, opacity .3s;}
+  .site-nav.open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .site-nav.open .nav-toggle span:nth-child(2){opacity:0;}
+  .site-nav.open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  @media(max-width:820px){
+    .nav-toggle{display:flex;}
+    .nav-links{position:fixed; top:0; right:0; height:100vh; width:min(78vw,320px);
+      flex-direction:column; justify-content:center; align-items:flex-start; gap:1.8rem;
+      padding:0 2rem; background:rgba(24,26,46,0.98); backdrop-filter:blur(12px);
+      transform:translateX(100%); transition:transform .35s cubic-bezier(.4,0,.2,1);
+      box-shadow:-20px 0 60px rgba(0,0,0,.4);}
+    .site-nav.open .nav-links{transform:translateX(0);}
+    .nav-links a{font-size:1rem;}
+  }
+
+  /* ---------- LANGPICK ---------- */
+  .langpick{position:relative; display:inline-flex;}
+  .langpick-btn{display:inline-flex; align-items:center; gap:.35rem; cursor:pointer;
+    background:transparent; border:1px solid var(--line); border-radius:20px;
+    padding:.34rem .62rem; color:var(--parchment); font-family:'Jost',sans-serif; line-height:1;}
+  .langpick-btn:hover{border-color:var(--gold);}
+  .langpick-btn .globe{color:var(--gold-soft); flex:0 0 auto;}
+  .langpick-cur{font-size:.72rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase;}
+  .langpick-caret{font-size:.55rem; opacity:.7; transition:transform .15s ease;}
+  .langpick.open .langpick-caret{transform:rotate(180deg);}
+  .langpick-menu{display:none; position:absolute; top:calc(100% + 8px); inset-inline-end:0; z-index:80;
+    flex-direction:column; min-width:150px; max-height:70vh; overflow:auto;
+    background:rgba(24,26,46,0.98); backdrop-filter:blur(10px);
+    border:1px solid var(--gold); border-radius:10px; padding:.35rem;
+    box-shadow:0 14px 34px rgba(0,0,0,.5);}
+  .langpick.open .langpick-menu{display:flex;}
+  .langpick-menu a{display:block; padding:.5rem .7rem; border-radius:6px; text-decoration:none;
+    color:var(--parchment); font-family:'Jost',sans-serif; font-size:.85rem; opacity:.85; white-space:nowrap;}
+  .langpick-menu a:hover{background:rgba(199,154,75,.16); opacity:1;}
+  .langpick-menu a.active{background:var(--gold); color:var(--dusk-deep); opacity:1;}
+
+  /* ---------- SCROLL REVEAL ---------- */
+  .reveal{opacity:0; transform:translateY(26px); transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1);}
+  .reveal.in{opacity:1; transform:none;}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1 !important; transform:none !important; transition:none;}
+    .hero-mark,.hero h1,.hero p.lede,.hero-ctas{animation:none !important;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- FLOAT ---------- */
+  @keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+  @keyframes floaty-sm{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+  .hero-mark{animation:floaty 6s ease-in-out infinite;}
+  .hero h1{animation:floaty-sm 7s ease-in-out infinite;}
+  .hero p.lede{animation:floaty-sm 7.6s ease-in-out .3s infinite;}
+  .hero-ctas{animation:floaty 8.4s ease-in-out .6s infinite;}
+
+  /* ---------- UNIFIED SHARE ---------- */
+  .share{display:flex; align-items:center; justify-content:center; gap:.55rem; flex-wrap:wrap;}
+  .share .sh{width:40px; height:40px; flex:0 0 auto; display:inline-flex; align-items:center;
+    justify-content:center; border-radius:50%; border:1px solid var(--line);
+    color:var(--parchment); background:transparent; cursor:pointer; padding:0;
+    transition:background .15s,color .15s,border-color .15s,transform .15s;}
+  .share .sh svg{width:17px; height:17px; fill:currentColor;}
+  .share .sh:hover{background:var(--gold); color:var(--dusk-deep); border-color:var(--gold); transform:translateY(-2px);}
+  .share .sh.copied{background:var(--gold-soft); color:var(--dusk-deep); border-color:var(--gold-soft);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:flex-end;
+    background: linear-gradient(180deg, rgba(24,26,46,0.15) 0%, rgba(24,26,46,0.55) 55%, rgba(15,15,26,0.92) 100%),
+                url('/assets/hero.jpg') center 30%/cover no-repeat;
+  }
+  .hero-inner{
+    position:relative;
+    width:100%;
+    padding:80px 28px clamp(104px,15vh,150px);
+    color:var(--parchment);
+    text-align:center;
+  }
+  .hero-mark{
+    width:34px; height:34px;
+    margin:0 auto 22px;
+    opacity:0.9;
+  }
+  .hero h1{
+    color:#fff;
+    font-size:clamp(2.6rem, 6vw, 5rem);
+    font-weight:500;
+    line-height:1.05;
+    text-shadow:0 2px 24px rgba(0,0,0,0.35);
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--gold-soft);
+  }
+  .hero p.lede{
+    max-width:640px;
+    margin:22px auto 0;
+    font-size:1.18rem;
+    font-weight:300;
+    color:rgba(242,234,217,0.92);
+  }
+  .hero-ctas{
+    display:flex;
+    gap:16px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:38px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Jost', sans-serif;
+    font-size:0.85rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    font-weight:500;
+    padding:15px 30px;
+    border-radius:var(--radius-lg);
+    text-decoration:none;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  }
+  .btn-gold{
+    background:var(--gold);
+    color:var(--dusk-deep);
+  }
+  .btn-gold:hover{background:var(--gold-soft); transform:translateY(-2px);}
+  .btn-outline{
+    border-color:rgba(242,234,217,0.55);
+    color:var(--parchment);
+    background:transparent;
+  }
+  .btn-outline:hover{background:rgba(242,234,217,0.12); transform:translateY(-2px);}
+
+  .scroll-cue{
+    position:absolute;
+    bottom:26px; left:50%;
+    transform:translateX(-50%);
+    color:rgba(242,234,217,0.75);
+    font-family:'Jost', sans-serif;
+    font-size:0.68rem;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+  }
+  .scroll-cue::after{
+    content:'';
+    width:1px; height:34px;
+    background:linear-gradient(180deg, rgba(242,234,217,0.9), transparent);
+    animation:drop 2.2s ease-in-out infinite;
+  }
+  @keyframes drop{
+    0%{transform:scaleY(0); transform-origin:top;}
+    50%{transform:scaleY(1); transform-origin:top;}
+    51%{transform-origin:bottom;}
+    100%{transform:scaleY(0); transform-origin:bottom;}
+  }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:108px 0;}
+  .section-head{
+    text-align:center;
+    max-width:680px;
+    margin:0 auto 64px;
+  }
+  .section-head .eyebrow{display:block; margin-bottom:14px;}
+  .section-head h2{font-size:clamp(2rem, 4vw, 2.9rem); font-weight:500;}
+  .section-head p{color:var(--ink-soft); margin-top:16px; font-size:1.08rem;}
+
+  /* ---------- INTRO ---------- */
+  .intro{background:var(--parchment);}
+  .intro .wrap{max-width:760px; text-align:center;}
+  .intro .eyebrow{display:block; margin-bottom:18px;}
+  .intro p{font-size:1.32rem; font-weight:300; line-height:1.6; color:var(--ink);}
+  .intro p + p{margin-top:22px;}
+
+  /* ---------- WHEEL OF PRINCIPLES (signature element) ---------- */
+  .principles{
+    background:var(--dusk-deep);
+    color:var(--parchment);
+    position:relative;
+    overflow:hidden;
+  }
+  .principles::before{
+    content:'';
+    position:absolute; inset:0;
+    background:
+      radial-gradient(circle at 50% 42%, rgba(199,154,75,0.16), transparent 60%);
+    pointer-events:none;
+  }
+  .principles .section-head p{color:rgba(242,234,217,0.72);}
+  .principles .section-head .eyebrow{color:var(--gold-soft);}
+  .principles .section-head h2{color:#fff;}
+
+  .wheel-outer{
+    position:relative;
+    width:min(92vw, 640px);
+    height:min(92vw, 640px);
+    margin:0 auto;
+  }
+  .wheel-center{
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    width:168px; height:168px;
+    border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #FCEBC0, var(--gold) 55%, var(--rust) 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    box-shadow:0 0 0 1px rgba(199,154,75,0.5), 0 0 70px rgba(199,154,75,0.35);
+  }
+  .wheel-center span{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.05rem;
+    color:var(--dusk-deep);
+    line-height:1.25;
+    padding:0 18px;
+  }
+  .wheel-ring{
+    position:absolute; inset:0;
+    border:1px dashed rgba(199,154,75,0.4);
+    border-radius:50%;
+  }
+  .wheel-item{
+    position:absolute;
+    top:50%; left:50%;
+    width:0; height:0;
+  }
+  .wheel-item-content{
+    position:absolute;
+    width:172px;
+    transform:translate(-50%,-50%);
+    text-align:center;
+  }
+  .wheel-num{
+    font-family:'Jost', sans-serif;
+    font-size:0.68rem;
+    letter-spacing:0.2em;
+    color:var(--gold-soft);
+    display:block;
+    margin-bottom:6px;
+  }
+  .wheel-item-content h3{
+    font-size:1.28rem;
+    color:#fff;
+    font-weight:500;
+    line-height:1.2;
+    margin-bottom:6px;
+  }
+  .wheel-item-content p{
+    font-size:0.86rem;
+    color:rgba(242,234,217,0.68);
+    line-height:1.45;
+    margin:0;
+  }
+
+  /* fallback stacked list for narrow screens */
+  .principles-list{display:none;}
+
+  @media (max-width: 720px){
+    .wheel-outer{display:none;}
+    .principles-list{
+      display:grid;
+      gap:22px;
+      max-width:520px;
+      margin:0 auto;
+    }
+    .principles-list .p-row{
+      display:flex;
+      gap:18px;
+      padding:20px 22px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,0.03);
+    }
+    .principles-list .wheel-num{margin-bottom:2px;}
+    .principles-list h3{font-size:1.15rem; color:#fff; font-weight:500; margin-bottom:4px;}
+    .principles-list p{font-size:0.9rem; color:rgba(242,234,217,0.7); margin:0;}
+  }
+
+  /* ---------- WETIKO ---------- */
+  .shadow-section{
+    background:var(--parchment-dim);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .shadow-grid{
+    display:grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap:64px;
+    align-items:center;
+  }
+  @media (max-width:860px){
+    .shadow-grid{grid-template-columns:1fr; gap:44px;}
+  }
+  .book-plate{
+    background:var(--dusk-deep);
+    color:var(--parchment);
+    aspect-ratio:2/3;
+    max-width:280px;
+    margin:0 auto;
+    padding:36px 26px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border:1px solid var(--gold);
+    position:relative;
+  }
+  .book-plate::before{
+    content:'';
+    position:absolute; inset:10px;
+    border:1px solid rgba(199,154,75,0.4);
+    pointer-events:none;
+  }
+  .book-plate .eyebrow{color:var(--gold-soft); font-size:0.62rem;}
+  .book-plate .title{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:2.1rem;
+    line-height:1.1;
+    margin:18px 0 8px;
+  }
+  .book-plate .author{
+    font-family:'Jost', sans-serif;
+    font-size:0.78rem;
+    letter-spacing:0.06em;
+    color:rgba(242,234,217,0.75);
+  }
+  .book-plate .glyph{
+    font-size:2.4rem;
+    color:var(--gold);
+    align-self:flex-end;
+  }
+
+  .shadow-copy h2{font-size:clamp(1.9rem, 3.4vw, 2.6rem); margin-bottom:20px; font-weight:500;}
+  .shadow-copy p{color:var(--ink-soft); margin-bottom:16px;}
+  .shadow-copy p:last-of-type{margin-bottom:0;}
+  .shadow-copy .cite{
+    margin-top:22px;
+    font-family:'Jost', sans-serif;
+    font-size:0.82rem;
+    color:var(--rust);
+    letter-spacing:0.02em;
+  }
+
+  /* ---------- JOIN ---------- */
+  .join{background:var(--parchment);}
+  .join-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+  }
+  @media (max-width:860px){
+    .join-grid{grid-template-columns:1fr; gap:48px;}
+  }
+  .join-card{
+    background:#fff;
+    border:1px solid var(--line);
+    padding:40px;
+  }
+  .join-card h3{font-size:1.5rem; margin-bottom:10px; font-weight:500;}
+  .join-card p{color:var(--ink-soft); font-size:0.98rem; margin-bottom:24px;}
+
+  form .field{margin-bottom:18px;}
+  form label{
+    display:block;
+    font-family:'Jost', sans-serif;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:7px;
+  }
+  form input, form textarea, form select{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid #cbbfa0;
+    background:var(--parchment);
+    font-family:'Crimson Pro', serif;
+    font-size:1rem;
+    color:var(--ink);
+  }
+  form input:focus, form textarea:focus, form select:focus{
+    outline:2px solid var(--gold);
+    outline-offset:1px;
+  }
+  form textarea{resize:vertical; min-height:90px;}
+  .join-card .btn-gold{width:100%; justify-content:center; border:none;}
+
+  .whatsapp-panel{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .whatsapp-panel .icon-wa{
+    width:48px; height:48px;
+    color:#25D366;
+    margin-bottom:18px;
+  }
+  .whatsapp-panel a.wa-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    background:#25D366;
+    color:#fff;
+    padding:16px 28px;
+    font-family:'Jost', sans-serif;
+    font-size:0.9rem;
+    letter-spacing:0.06em;
+    text-decoration:none;
+    margin-top:8px;
+    width:fit-content;
+  }
+  .whatsapp-panel a.wa-btn:hover{background:#1fb958;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background:var(--dusk-deep);
+    color:rgba(242,234,217,0.75);
+    padding:56px 0 34px;
+  }
+  .footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:24px;
+    padding-bottom:32px;
+    border-bottom:1px solid rgba(199,154,75,0.25);
+    margin-bottom:26px;
+  }
+  footer .brand{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.5rem;
+    color:#fff;
+  }
+  .share-row{
+    display:flex;
+    gap:10px;
+    align-items:center;
+  }
+  .share-row span.eyebrow{color:var(--gold-soft);}
+  .share-btn{
+    width:38px; height:38px;
+    border-radius:50%;
+    border:1px solid rgba(199,154,75,0.4);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--parchment);
+    text-decoration:none;
+    transition:background 0.2s ease, transform 0.2s ease;
+  }
+  .share-btn:hover{background:var(--gold); color:var(--dusk-deep); transform:translateY(-2px);}
+  .share-btn svg{width:16px; height:16px;}
+
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:14px;
+    font-size:0.86rem;
+  }
+  .footer-bottom a{text-decoration:none; color:rgba(242,234,217,0.8);}
+  .footer-bottom a:hover{color:var(--gold-soft);}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .scroll-cue::after{animation:none;}
+    .btn, .share-btn{transition:none;}
+  }
+
+  /* ---------- TRADITIONS ROW ---------- */
+  .traditions-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+    margin-top:34px;
+  }
+  .tradition-chip{
+    font-family:'Jost', sans-serif;
+    font-size:0.76rem;
+    letter-spacing:0.06em;
+    padding:8px 16px;
+    border:1px solid var(--rust);
+    color:var(--rust);
+    border-radius:999px;
+    background:rgba(156,78,42,0.06);
+  }
+
+  /* ---------- RIPPLE / CORE FRAMING ---------- */
+  .ripple{background:var(--parchment-dim); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .ripple-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:60px;
+    align-items:center;
+  }
+  @media (max-width:860px){ .ripple-grid{grid-template-columns:1fr; gap:44px;} }
+  .ripple-copy h2{font-size:clamp(1.9rem, 3.4vw, 2.6rem); margin-bottom:18px; font-weight:500;}
+  .ripple-copy p{color:var(--ink-soft); margin-bottom:14px;}
+  .ripple-diagram{
+    position:relative;
+    width:100%;
+    aspect-ratio:1/1;
+    max-width:340px;
+    margin:0 auto;
+  }
+  .ripple-ring{
+    position:absolute;
+    border-radius:50%;
+    border:1px solid var(--rust);
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .ripple-ring span{
+    position:relative;
+    top:10px;
+    font-family:'Jost', sans-serif;
+    font-size:0.68rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--rust);
+    background:var(--parchment-dim);
+    padding:0 8px;
+  }
+  .r1{width:22%; height:22%; opacity:1;}
+  .r2{width:48%; height:48%; opacity:0.8;}
+  .r3{width:74%; height:74%; opacity:0.6;}
+  .r4{width:100%; height:100%; opacity:0.4;}
+
+  .healing-video{
+    max-width:760px;
+    margin:56px auto 0;
+    text-align:center;
+  }
+  .healing-video-frame{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    border:1px solid var(--rust);
+    background:#000;
+  }
+  .healing-video-frame iframe{
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    border:0;
+  }
+  .healing-video-caption{
+    margin-top:14px;
+    font-size:0.9rem;
+    color:var(--ink-soft);
+    font-style:italic;
+  }
+
+  /* ---------- GROUND RULES ---------- */
+  .ground-rules{background:var(--dusk-deep); color:var(--parchment);}
+  .ground-rules .section-head h2{color:#fff;}
+  .ground-rules .section-head .eyebrow{color:var(--gold-soft);}
+  .ground-rules .section-head p{color:rgba(242,234,217,0.72);}
+  .rules-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:28px;
+  }
+  @media (max-width:860px){ .rules-grid{grid-template-columns:1fr;} }
+  .rule-card{
+    border:1px solid rgba(199,154,75,0.35);
+    padding:34px 28px;
+    text-align:center;
+  }
+  .rule-glyph{
+    display:block;
+    font-size:1.3rem;
+    color:var(--gold);
+    margin-bottom:16px;
+  }
+  .rule-card h3{font-size:1.25rem; color:#fff; font-weight:500; margin-bottom:12px;}
+  .rule-card p{font-size:0.92rem; color:rgba(242,234,217,0.7); margin:0;}
+  .hashtag{color:var(--gold-soft); font-family:'Jost', sans-serif; font-size:0.82rem;}
+
+  /* ---------- READING REEL ---------- */
+  .jung-quote{
+    max-width:760px;
+    margin:0 0 48px;
+    padding:28px 32px;
+    border-left:3px solid var(--rust);
+    background:rgba(156,78,42,0.05);
+  }
+  .jung-quote p{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.25rem;
+    line-height:1.5;
+    color:var(--ink);
+    margin:0 0 10px;
+  }
+  .jung-quote cite{
+    font-family:'Jost', sans-serif;
+    font-style:normal;
+    font-size:0.78rem;
+    letter-spacing:0.06em;
+    color:var(--rust);
+  }
+  .reading-reel{
+    display:flex;
+    gap:26px;
+    overflow-x:auto;
+    padding:8px 4px 18px;
+    scroll-snap-type:x proximity;
+  }
+  .reading-reel .book-plate{
+    flex:0 0 240px;
+    scroll-snap-align:start;
+    aspect-ratio:auto;
+    max-width:none;
+    min-height:340px;
+  }
+  .reading-reel .plate-desc{
+    font-size:0.82rem;
+    color:rgba(242,234,217,0.7);
+    line-height:1.5;
+    margin-top:14px;
+  }
+  .book-plate-add{
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border-style:dashed;
+  }
+  .book-plate-add .title{font-size:2.6rem; margin:10px 0;}
+
+  /* ---------- GOLDEN RULE ---------- */
+  .golden-rule-block{
+    margin-top:80px;
+    padding-top:64px;
+    border-top:1px solid rgba(199,154,75,0.3);
+    text-align:center;
+  }
+  .golden-rule-block h2{font-size:clamp(2rem, 4vw, 2.9rem); font-weight:500; color:#fff; margin:14px 0 10px;}
+  .golden-rule-intro{
+    max-width:620px;
+    margin:0 auto 40px;
+    color:rgba(242,234,217,0.72);
+    font-size:1.05rem;
+  }
+  .golden-rule-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
+    gap:20px;
+    text-align:left;
+  }
+  .gr-card{
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+    border:1px solid rgba(199,154,75,0.35);
+    background:rgba(255,255,255,0.02);
+    padding:22px 22px 18px;
+  }
+  .gr-icon{
+    flex:0 0 auto;
+    width:44px; height:44px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:radial-gradient(circle at 35% 30%, #FCEBC0, var(--gold) 55%, var(--rust) 100%);
+    color:var(--dusk-deep);
+    font-size:1.3rem;
+    line-height:1;
+  }
+  .gr-text{flex:1 1 auto; min-width:0;}
+  .gr-card h4{
+    font-family:'Jost', sans-serif;
+    font-size:0.82rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--gold-soft);
+    margin:0 0 10px;
+  }
+  .gr-card p{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.12rem;
+    line-height:1.45;
+    color:#fff;
+    margin:0 0 10px;
+  }
+  .gr-card .gr-source{
+    font-family:'Jost', sans-serif;
+    font-size:0.72rem;
+    color:rgba(242,234,217,0.6);
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ===================== SITE NAV ===================== -->
+<nav class="site-nav" id="siteNav" aria-label="Hauptnavigation">
+  <a class="nav-brand" href="#top" aria-label="Interfaith Sanctuary — Startseite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+      <circle cx="12" cy="12" r="9.3"/>
+      <path d="M12 3.2 L12 20.8 M4.4 8 L19.6 8 M4.4 16 L19.6 16" stroke-opacity="0.7"/>
+    </svg>
+    <span>Interfaith Sanctuary</span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#principles">Die Prinzipien</a>
+    <a href="#reading">Leseempfehlungen</a>
+    <a href="#join" class="nav-cta">Ins Gästebuch eintragen</a>
+  </div>
+  <div class="langpick" id="langpick">
+    <button class="langpick-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Sprache">
+      <svg class="globe" aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18"/><path d="M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>
+      <span class="langpick-cur">DE</span><span class="langpick-caret" aria-hidden="true">▾</span>
+    </button>
+    <div class="langpick-menu" role="listbox">
+      <a href="/" hreflang="en">English</a>
+      <a href="/es/" hreflang="es">Español</a>
+      <a href="/fr/" hreflang="fr">Français</a>
+      <a href="/de/" hreflang="de" class="active" aria-current="true">Deutsch</a>
+      <a href="/pt/" hreflang="pt">Português</a>
+      <a href="/ru/" hreflang="ru">Русский</a>
+      <a href="/ar/" hreflang="ar" dir="rtl">العربية</a>
+      <a href="/zh/" hreflang="zh">中文</a>
+      <a href="/hi/" hreflang="hi">हिन्दी</a>
+      <a href="/he/" hreflang="he" dir="rtl">עברית</a>
+    </div>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menü" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<div class="hero" id="top">
+  <div class="hero-inner">
+    <svg class="hero-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+      <circle cx="12" cy="12" r="9.3"/>
+      <path d="M12 3.2 L12 20.8 M4.4 8 L19.6 8 M4.4 16 L19.6 16" stroke-opacity="0.7"/>
+    </svg>
+    <h1>Interfaith <em>Sanctuary</em></h1>
+    <p class="lede">Ein Gotteshaus, das keinem einzelnen Glauben gehört – getragen stattdessen von sieben Prinzipien, die jede Tradition längst als heilig anerkennt.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="#join">Ins Gästebuch eintragen</a>
+      <a class="btn btn-outline" href="https://chat.whatsapp.com/LJAsRpg8i5h6t4uJvogfhm?mode=gi_t" target="_blank" rel="noopener">Unserem WhatsApp-Kreis beitreten</a>
+    </div>
+  </div>
+  <div class="scroll-cue">Eintreten</div>
+</div>
+
+<!-- ===================== INTRO ===================== -->
+<section class="intro">
+  <div class="wrap">
+    <span class="eyebrow">Wer wir sind</span>
+    <p>Interfaith Sanctuary ist ein Ort der Begegnung, keine Lehre. Wir wurden nicht gegründet, um die Kirche, Synagoge, Moschee, den Tempel oder Hain zu ersetzen, den jemand bereits sein Zuhause nennt – wir wurden für den Boden dazwischen geschaffen, wo ein Jude, eine Christin, ein Muslim, eine Hindu, ein Buddhist, eine Animistin und der einfach Suchende auf denselben Bänken sitzen und mit anderen Worten dasselbe Gebet meinen können.</p>
+    <p>Was uns zusammenhält, ist kein gemeinsamer Glaube an Gott. Es ist eine gemeinsame Übereinkunft darüber, wie wir einander behandeln, während jede und jeder von uns diese Frage für sich selbst klärt.</p>
+
+    <div class="traditions-row" aria-label="Willkommene Traditionen">
+      <span class="tradition-chip">Judentum</span>
+      <span class="tradition-chip">Christentum</span>
+      <span class="tradition-chip">Islam</span>
+      <span class="tradition-chip">Hinduismus</span>
+      <span class="tradition-chip">Buddhismus</span>
+      <span class="tradition-chip">Erdverbundene &amp; animistische Wege</span>
+      <span class="tradition-chip">Noch auf der Suche</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CORE FRAMING / RIPPLE ===================== -->
+<section class="ripple">
+  <div class="wrap ripple-grid">
+    <div class="ripple-copy">
+      <span class="eyebrow">Unser Ansatz</span>
+      <h2>Menschen zuerst</h2>
+      <p>Wir kommen hier nicht zusammen, um uns darauf zu einigen, wer Gott ist. Wir kommen zusammen, um einander zuerst als Menschen zu begegnen – und die Heilung, die zwischen zwei Menschen geschieht, nach außen wirken zu lassen, wie es schon immer war.</p>
+      <p>Ein Mensch heilt. Diese Heilung erreicht seine Familie. Familien geben ihren Gemeinschaften Halt. Und Gemeinschaften sind es, die eine Gesellschaft mit der Zeit verändern. Es ist langsame, unspektakuläre Arbeit – aber die einzige Art, die Bestand hat.</p>
+    </div>
+    <div class="ripple-diagram" aria-hidden="true">
+      <div class="ripple-ring r1"><span>Individuum</span></div>
+      <div class="ripple-ring r2"><span>Familie</span></div>
+      <div class="ripple-ring r3"><span>Gemeinschaft</span></div>
+      <div class="ripple-ring r4"><span>Gesellschaft</span></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="healing-video">
+      <div class="healing-video-frame">
+        <iframe src="https://www.youtube.com/embed/uGnlsGgomKU" title="Gangaji — Who You Are Is Love" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="healing-video-caption">Im Kreis geteilt als Erinnerung daran, wem unsere Heilung gilt – einer Identität, die unter jedem Etikett von Religion oder Herkunft liegt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SEVEN PRINCIPLES (WHEEL) ===================== -->
+<section class="principles" id="principles">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Im Mittelpunkt</span>
+      <h2>Die sieben Prinzipien</h2>
+      <p>Inspiriert von den sieben noachidischen Geboten – dem ältesten überlieferten Versuch der Menschheit, eine universelle Ethik zu formulieren – hier neu gefasst als positive Charta für einen Zufluchtsort, der allen gehört.</p>
+    </div>
+
+    <div class="wheel-outer" role="list" aria-label="Die sieben Prinzipien">
+      <div class="wheel-ring" aria-hidden="true"></div>
+      <div class="wheel-center"><span>Sieben Prinzipien,<br>ein Tisch</span></div>
+
+      <!-- angle 0deg / top -->
+      <div class="wheel-item" style="transform:rotate(0deg) translate(258px);">
+        <div class="wheel-item-content" style="transform:translate(-50%,-50%) rotate(0deg);" role="listitem">
+          <span class="wheel-num">I</span>
+          <h3>Ehre das Heilige</h3>
+          <p>Erkenne und achte die Gegenwart des Göttlichen in allem Leben.</p>
+        </div>
+      </div>
+      <!-- angle 51.43deg -->
+      <div class="wheel-item" style="transform:rotate(51.43deg) translate(258px);">
+        <div class="wheel-item-content" style="transform:translate(-50%,-50%) rotate(-51.43deg);" role="listitem">
+          <span class="wheel-num">II</span>
+          <h3>Sprich mit Ehrfurcht</h3>
+          <p>Nutze Worte, um zu erheben, zu segnen und Wahrheit in die Welt zu bringen.</p>
+        </div>
+      </div>
+      <!-- angle 102.86deg -->
+      <div class="wheel-item" style="transform:rotate(102.86deg) translate(258px);">
+        <div class="wheel-item-content" style="transform:translate(-50%,-50%) rotate(-102.86deg);" role="listitem">
+          <span class="wheel-num">III</span>
+          <h3>Schütze das Leben</h3>
+          <p>Achte und bewahre das Leben und die Würde jedes Menschen.</p>
+        </div>
+      </div>
+      <!-- angle 154.29deg -->
+      <div class="wheel-item" style="transform:rotate(154.29deg) translate(258px);">
+        <div class="wheel-item-content" style="transform:translate(-50%,-50%) rotate(-154.29deg);" role="listitem">
+          <span class="wheel-num">IV</span>
+          <h3>Ehre liebevolle, respektvolle Beziehungen</h3>
+          <p>Pflege Aufrichtigkeit, Einvernehmen und Achtsamkeit im Umgang miteinander.</p>
+        </div>
+      </div>
+      <!-- angle 205.71deg -->
+      <div class="wheel-item" style="transform:rotate(205.71deg) translate(258px);">
+        <div class="wheel-item-content" style="transform:translate(-50%,-50%) rotate(-205.71deg);" role="listitem">
+          <span class="wheel-num">V</span>
+          <h3>Übe Großzügigkeit</h3>
+          <p>Lebe mit Ehrlichkeit, Vertrauen und Sorgfalt im Umgang mit dem Eigentum anderer in der gemeinsamen Gemeinschaft.</p>
+        </div>
+      </div>
+      <!-- angle 257.14deg -->
+      <div class="wheel-item" style="transform:rotate(257.14deg) translate(258px);">
+        <div class="wheel-item-content" style="transform:translate(-50%,-50%) rotate(-257.14deg);" role="listitem">
+          <span class="wheel-num">VI</span>
+          <h3>Begegne allen Lebewesen mit Güte</h3>
+          <p>Zeige Mitgefühl gegenüber Tieren und ehre die Verbundenheit allen Lebens.</p>
+        </div>
+      </div>
+      <!-- angle 308.57deg -->
+      <div class="wheel-item" style="transform:rotate(308.57deg) translate(258px);">
+        <div class="wheel-item-content" style="transform:translate(-50%,-50%) rotate(-308.57deg);" role="listitem">
+          <span class="wheel-num">VII</span>
+          <h3>Baue eine gerechte und faire Gesellschaft</h3>
+          <p>Stehe ein für Gerechtigkeit, Verantwortung und das Wohl aller.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile fallback -->
+    <div class="principles-list">
+      <div class="p-row"><div><span class="wheel-num">I</span><h3>Ehre das Heilige</h3><p>Erkenne und achte die Gegenwart des Göttlichen in allem Leben.</p></div></div>
+      <div class="p-row"><div><span class="wheel-num">II</span><h3>Sprich mit Ehrfurcht</h3><p>Nutze Worte, um zu erheben, zu segnen und Wahrheit in die Welt zu bringen.</p></div></div>
+      <div class="p-row"><div><span class="wheel-num">III</span><h3>Schütze das Leben</h3><p>Achte und bewahre das Leben und die Würde jedes Menschen.</p></div></div>
+      <div class="p-row"><div><span class="wheel-num">IV</span><h3>Ehre liebevolle, respektvolle Beziehungen</h3><p>Pflege Aufrichtigkeit, Einvernehmen und Achtsamkeit im Umgang miteinander.</p></div></div>
+      <div class="p-row"><div><span class="wheel-num">V</span><h3>Übe Großzügigkeit</h3><p>Lebe mit Ehrlichkeit, Vertrauen und Sorgfalt im Umgang mit dem Eigentum anderer in der gemeinsamen Gemeinschaft.</p></div></div>
+      <div class="p-row"><div><span class="wheel-num">VI</span><h3>Begegne allen Lebewesen mit Güte</h3><p>Zeige Mitgefühl gegenüber Tieren und ehre die Verbundenheit allen Lebens.</p></div></div>
+      <div class="p-row"><div><span class="wheel-num">VII</span><h3>Baue eine gerechte und faire Gesellschaft</h3><p>Stehe ein für Gerechtigkeit, Verantwortung und das Wohl aller.</p></div></div>
+    </div>
+
+    <!-- ===================== GOLDEN RULE ===================== -->
+    <div class="golden-rule-block">
+      <span class="eyebrow">Eine Regel, jede Tradition</span>
+      <h2>Die Goldene Regel</h2>
+      <p class="golden-rule-intro">Bevor sich die Traditionen hier auf einen einzigen theologischen Punkt einigen, sind sie sich bereits hierüber einig. Andere Worte, dieselbe Regel, älter als wir alle.</p>
+      <div class="golden-rule-grid">
+        <div class="gr-card"><div class="gr-icon">✡</div><div class="gr-text"><h4>Judentum</h4><p>„Was dir verhasst ist, das tue deinem Nächsten nicht an: Das ist die ganze Tora; alles Übrige ist Erklärung."</p><span class="gr-source">Babylonischer Talmud</span></div></div>
+        <div class="gr-card"><div class="gr-icon">✝</div><div class="gr-text"><h4>Christentum</h4><p>„Alles nun, was ihr wollt, dass euch die Leute tun sollen, das tut ihr ihnen auch."</p><span class="gr-source">Matthäus 7,12</span></div></div>
+        <div class="gr-card"><div class="gr-icon">☪</div><div class="gr-text"><h4>Islam</h4><p>„Gebt, ihr Kinder Adams, so wie ihr selbst gerne bezahlt würdet, und übt Gerechtigkeit, wie ihr sie euch selbst wünscht."</p><span class="gr-source">Koran 83:1&ndash;6</span></div></div>
+        <div class="gr-card"><div class="gr-icon">ॐ</div><div class="gr-text"><h4>Hinduismus</h4><p>„Füge anderen nicht zu, was du selbst als verletzend empfinden würdest."</p><span class="gr-source">Udana-Varga 5:18</span></div></div>
+        <div class="gr-card"><div class="gr-icon">☸</div><div class="gr-text"><h4>Buddhismus</h4><p>„Dies ist die Summe des Dharma: Tue anderen nichts an, was dir selbst Schmerz bereiten würde."</p><span class="gr-source">Mahabharata 5:1517</span></div></div>
+        <div class="gr-card"><div class="gr-icon">仁</div><div class="gr-text"><h4>Konfuzianismus</h4><p>„Was du selbst nicht wünschst, das tue auch keinem anderen an."</p><span class="gr-source">Die Lehre von der Mitte, 13.3</span></div></div>
+        <div class="gr-card"><div class="gr-icon">☬</div><div class="gr-text"><h4>Sikhismus</h4><p>„Wie Juwelen sind die Herzen aller Menschen. Sie zu verletzen ist niemals gut."</p><span class="gr-source">Guru Arjan Dev Ji, 259</span></div></div>
+        <div class="gr-card"><div class="gr-icon">🪶</div><div class="gr-text"><h4>Erdverbundene &amp; indigene Wege</h4><p>„Alle Dinge sind unsere Verwandten; was wir allem antun, tun wir uns selbst an. Alles ist wahrhaftig eins."</p><span class="gr-source">Black Elk</span></div></div>
+        <div class="gr-card"><div class="gr-icon">✧</div><div class="gr-text"><h4>Bahá'í-Glaube</h4><p>„Wendest du deine Augen der Gerechtigkeit zu, so erwähle für deinen Nächsten, was du für dich selbst erwählst."</p><span class="gr-source">Bahá'u'lláh</span></div></div>
+        <div class="gr-card"><div class="gr-icon">◎</div><div class="gr-text"><h4>Noch auf der Suche</h4><p>„Behandle andere so, wie du behandelt werden möchtest und vernünftigerweise erwarten kannst, behandelt werden zu wollen. Denke dabei an ihre Perspektive."</p><span class="gr-source">Säkulare / humanistische Ethik</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GROUND RULES ===================== -->
+<section class="ground-rules">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Wie wir diesen Raum sicher halten</span>
+      <h2>Grundregeln des Zufluchtsorts</h2>
+      <p>Ein Zufluchtsort für alle braucht dennoch einen Boden, auf dem er steht. Das hier sind unsere.</p>
+    </div>
+    <div class="rules-grid">
+      <div class="rule-card">
+        <span class="rule-glyph">◈</span>
+        <h3>Keine Gurus</h3>
+        <p>Niemand hier spricht im Namen des Göttlichen für jemand anderen. Jede und jeder ist sein eigener Guru – wir können begleiten, aber wir entscheiden nicht für dich.</p>
+      </div>
+      <div class="rule-card">
+        <span class="rule-glyph">◈</span>
+        <h3>Kein Trolling, kein Ghosting, kein Schweigen als Strafe</h3>
+        <p>Meinungsverschiedenheiten sind willkommen. Grausamkeit und das Verschwinden ohne ein Wort nicht. Anhaltende Unaufrichtigkeit ist Grund für den Ausschluss aus dem Kreis.</p>
+      </div>
+      <div class="rule-card">
+        <span class="rule-glyph">◈</span>
+        <h3>Wir sind ein Matriarchat</h3>
+        <p>Dieser Zufluchtsort wird von Frauen getragen, geführt und beschützt. <span class="hashtag">#matriarchy</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WETIKO / READING REEL ===================== -->
+<section class="shadow-section" id="reading">
+  <div class="wrap">
+    <div class="section-head" style="text-align:left; margin:0 0 40px;">
+      <span class="eyebrow">Über den Schatten, den wir teilen</span>
+      <h2>Leseempfehlungen: Die Erforschung des Bösen</h2>
+      <p style="margin-top:16px;">Jede Tradition, die Menschen versammelt, muss auch benennen, was sie auseinandertreibt – Selbstsucht, Grausamkeit, das langsame Sich-selbst-Einreden, das andere verletzt. Jede benennt es anders, und wir verlangen von niemandem hier, sein Wort gegen das eines anderen einzutauschen. Deshalb dreht sich die Leseliste des Zufluchtsorts nicht um Trost. Sie dreht sich um das Böse selbst – wie es entsteht, wie es sich verbirgt und wie man es erkennt – denn ein Zufluchtsort, der das nicht ehrlich betrachten kann, ist kaum ein Zufluchtsort.</p>
+    </div>
+
+    <blockquote class="jung-quote">
+      <p>Carl Jung verbrachte einen Großteil seines Lebens mit genau diesem Problem, und sein Fazit war unverblümt: Ein Mensch wächst nicht dem Licht entgegen, indem er sich selbst als gut vorstellt. Er wächst, indem er sich seiner eigenen Dunkelheit bewusst wird. Bleibt sie unbeachtet, so warnte er, verschwindet diese Dunkelheit nicht – sie übernimmt still die Führung, lenkt ein Leben von unten, bis das, dem man nie ins Auge sah, mit Schicksal verwechselt wird.</p>
+      <cite>— nach C.G. Jung, über den Schatten</cite>
+    </blockquote>
+
+    <div class="reading-reel">
+      <div class="book-plate">
+        <div>
+          <span class="eyebrow">Leseempfehlung</span>
+          <div class="title">Wetiko</div>
+          <div class="author">Paul Levy</div>
+        </div>
+        <p class="plate-desc">Ein Begriff aus dem Denken indigener Algonkin-Völker für einen „Geistvirus" aus Gier und Trennung, der sich von Mensch zu Mensch ausbreitet – hier als gemeinsames Vokabular für etwas verwendet, wovor jeder Glaube längst warnt.</p>
+        <div class="glyph">✧</div>
+      </div>
+
+      <div class="book-plate">
+        <div>
+          <span class="eyebrow">Leseempfehlung</span>
+          <div class="title">Malignant Self-Love</div>
+          <div class="author">Sam Vaknin — Narcissism Revisited</div>
+        </div>
+        <p class="plate-desc">Ein klinischer Blick auf Narzissmus von jemandem, der ihn selbst erlebt und erforscht hat. Hilfreich, um ein Muster von Schaden zu benennen, ohne die Person vor einem diagnostizieren zu müssen.</p>
+        <div class="glyph">✧</div>
+      </div>
+
+      <div class="book-plate">
+        <div>
+          <span class="eyebrow">Leseempfehlung</span>
+          <div class="title">Twelve Steps to a Compassionate Life</div>
+          <div class="author">Karen Armstrong</div>
+        </div>
+        <p class="plate-desc">Eine Religionshistorikerin destilliert jede große Tradition auf einen gemeinsamen Nenner: aktives, praktisches Mitgefühl. Sie lässt die Frage &ldquo;Wer hat recht&rdquo; vollständig hinter sich und wird zu einem praxisnahen Leitfaden dafür, füreinander im Alltag da zu sein &mdash; die Praxis, die dem Schatten antwortet, den der Rest dieses Regals benennt.</p>
+        <div class="glyph">✧</div>
+      </div>
+
+      <div class="book-plate book-plate-add">
+        <div>
+          <span class="eyebrow">Mehr folgt</span>
+          <div class="title">＋</div>
+        </div>
+        <p class="plate-desc">Dieses Regal wächst noch. Wenn dir ein Buch geholfen hat, deinen eigenen Schatten ehrlich zu benennen, sag es uns im Gästebuch weiter unten.</p>
+      </div>
+    </div>
+    <p class="cite" style="margin-top:24px;">Erhältlich überall, wo Bücher verkauft werden. Interfaith Sanctuary steht in keiner offiziellen Verbindung zu den Autor:innen und wird von ihnen nicht unterstützt.</p>
+
+    <div class="healing-video" style="margin-top:56px;">
+      <div class="healing-video-frame">
+        <iframe src="https://www.youtube.com/embed/dkpgz3uQ58U" title="Interpol - Evil (Official Video)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="healing-video-caption">Interpol, „Evil" &mdash; ein Lied über das Unbehagen, einer dunklen Sache direkt ins Auge zu sehen, statt wegzuschauen. In diesem Sinne hier geteilt, nicht als Lehre.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="join" id="join">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Komm, wie du bist</span>
+      <h2>Werde Teil des Zufluchtsorts</h2>
+      <p>Wie auch immer du betest, oder ob du überhaupt betest – hier ist ein Platz für dich.</p>
+    </div>
+
+    <div class="join-grid">
+      <div class="join-card">
+        <h3>Ins Gästebuch eintragen</h3>
+        <p>Erzähl uns ein wenig von dir, und wir halten dich auf dem Laufenden über das, was im Zufluchtsort geschieht.</p>
+        <form action="https://formspree.io/f/mzdllgpw" method="POST"><input type="hidden" name="_next" value="https://interfaith-sanctuary.org/de/contact-thanks">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="tradition">Tradition oder Weg (optional)</label>
+            <input type="text" id="tradition" name="tradition" placeholder="z. B. jüdisch, christlich, buddhistisch, suchend, keine">
+          </div>
+          <div class="field">
+            <label for="message">Ein Wort an uns (optional)</label>
+            <textarea id="message" name="message" placeholder="Was führt dich zum Zufluchtsort?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold">Senden</button>
+        </form>
+      </div>
+
+      <div class="whatsapp-panel">
+        <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.1h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.14.82.84-3.06-.2-.31a8.18 8.18 0 0 1-1.26-4.35c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.17 8.17 0 0 1 2.41 5.81c0 4.53-3.69 8.21-8.23 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.68 4.25 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+        <h3 class="display" style="font-size:1.5rem; margin-bottom:10px;">Unserem WhatsApp-Kreis beitreten</h3>
+        <p style="color:var(--ink-soft); max-width:420px;">Für Ankündigungen in Echtzeit, gemeinsame Gedanken und die kleinen, alltäglichen Gespräche, die einen Zufluchtsort wie ein Zuhause fühlen lassen.</p>
+        <a class="wa-btn" href="https://chat.whatsapp.com/LJAsRpg8i5h6t4uJvogfhm?mode=gi_t" target="_blank" rel="noopener">WhatsApp-Einladung öffnen →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="brand">Interfaith Sanctuary</div>
+      <div class="share-row">
+        <span class="eyebrow">Teilen</span>
+        <div class="share" aria-label="Diesen Zufluchtsort teilen">
+          <a class="sh" target="_blank" rel="noopener" aria-label="Auf WhatsApp teilen" href="https://wa.me/?text=A%20sanctuary%20built%20on%20seven%20shared%20principles%20%E2%80%94%20for%20every%20path.%20https%3A%2F%2Finterfaith-sanctuary.org%2F"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a class="sh" target="_blank" rel="noopener" aria-label="Auf Telegram teilen" href="https://t.me/share/url?url=https%3A%2F%2Finterfaith-sanctuary.org%2F&text=A%20sanctuary%20built%20on%20seven%20shared%20principles%20%E2%80%94%20for%20every%20path."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+          <a class="sh" target="_blank" rel="noopener" aria-label="Auf X teilen" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Finterfaith-sanctuary.org%2F&text=A%20sanctuary%20built%20on%20seven%20shared%20principles%20%E2%80%94%20for%20every%20path."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a class="sh" target="_blank" rel="noopener" aria-label="Auf Facebook teilen" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Finterfaith-sanctuary.org%2F"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a class="sh" aria-label="Per E-Mail teilen" href="mailto:?subject=Interfaith%20Sanctuary&body=A%20sanctuary%20built%20on%20seven%20shared%20principles%20%E2%80%94%20for%20every%20path.%20https%3A%2F%2Finterfaith-sanctuary.org%2F"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 5.5A2 2 0 0 1 3.5 3.5h17a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-17a2 2 0 0 1-2-2v-13Zm2.2.5 8.3 5.2L20.3 6H3.7Zm16.3 1.9-7.6 4.8a1 1 0 0 1-1.1 0L3.5 7.9V18.5h17V7.9Z"/></svg></a>
+          <button class="sh" type="button" aria-label="Link kopieren" onclick="var b=this;if(navigator.clipboard){navigator.clipboard.writeText('https://interfaith-sanctuary.org/').then(function(){b.classList.add('copied');setTimeout(function(){b.classList.remove('copied')},1500)})}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 1H4a2 2 0 0 0-2 2v11h2V3h11V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h10v14Z"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Interfaith Sanctuary. Treuhänderisch gehalten für jede Tradition, im Besitz von keiner.</span>
+      <a href="mailto:interfaith-sanctuary@protonmail.com">interfaith-sanctuary@protonmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('siteNav'),
+      toggle=document.getElementById('navToggle'),
+      links=document.getElementById('navLinks');
+
+  /* header solid-on-scroll */
+  function onScroll(){ if(window.scrollY>40) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* mobile menu */
+  function setOpen(o){ nav.classList.toggle('open', o); toggle.setAttribute('aria-expanded', o?'true':'false'); }
+  toggle.addEventListener('click', function(){ setOpen(!nav.classList.contains('open')); });
+  links.addEventListener('click', function(e){ if(e.target.closest('a')) setOpen(false); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') setOpen(false); });
+
+  /* language dropdown */
+  var lp=document.getElementById('langpick');
+  if(lp){
+    var lpBtn=lp.querySelector('.langpick-btn');
+    lpBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      var willOpen=!lp.classList.contains('open');
+      lp.classList.toggle('open', willOpen);
+      lpBtn.setAttribute('aria-expanded', willOpen?'true':'false');
+    });
+    document.addEventListener('click', function(e){
+      if(!lp.contains(e.target)){ lp.classList.remove('open'); lpBtn.setAttribute('aria-expanded','false'); }
+    });
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ lp.classList.remove('open'); lpBtn.setAttribute('aria-expanded','false'); } });
+  }
+
+  /* scroll reveal */
+  var targets=document.querySelectorAll('section, .hero-inner, .book-plate, .gr-card, .rule-card');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+    targets.forEach(function(t){ t.classList.add('reveal'); io.observe(t); });
+  }
+})();
+</script>
+
+</body>
+</html>
