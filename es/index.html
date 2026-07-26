@@ -813,6 +813,55 @@
     color:rgba(242,234,217,0.6);
   }
 
+
+  /* == interfaith anim v2 == */
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  @keyframes rippleBreath{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+  @keyframes centerPulse{0%,100%{box-shadow:0 0 0 1px rgba(199,154,75,.5),0 0 60px rgba(199,154,75,.3)}50%{box-shadow:0 0 0 1px rgba(228,198,135,.75),0 0 105px rgba(228,198,135,.5)}}
+  /* intro chips */
+  .tradition-chip{transition:transform .3s ease,background .3s,color .3s,border-color .3s;animation:floaty-sm 6s ease-in-out infinite;}
+  .tradition-chip:nth-child(2){animation-delay:-.8s}.tradition-chip:nth-child(3){animation-delay:-1.6s}.tradition-chip:nth-child(4){animation-delay:-2.4s}.tradition-chip:nth-child(5){animation-delay:-3.2s}.tradition-chip:nth-child(6){animation-delay:-4s}.tradition-chip:nth-child(7){animation-delay:-4.8s}
+  .tradition-chip:hover{transform:translateY(-4px) scale(1.07);background:var(--rust);color:var(--parchment);border-color:var(--rust);}
+  /* ripple diagram */
+  .ripple-diagram{animation:rippleBreath 6.5s ease-in-out infinite;}
+  .ripple-ring{transition:transform .6s cubic-bezier(.2,.8,.2,1),border-color .35s,box-shadow .35s;}
+  .ripple-diagram:hover .ripple-ring{border-color:var(--gold);box-shadow:0 0 28px rgba(199,154,75,.28);}
+  .ripple-diagram:hover .r1{transform:translate(-50%,-50%) scale(1.5)}
+  .ripple-diagram:hover .r2{transform:translate(-50%,-50%) scale(1.3)}
+  .ripple-diagram:hover .r3{transform:translate(-50%,-50%) scale(1.15)}
+  .ripple-diagram:hover .r4{transform:translate(-50%,-50%) scale(1.06)}
+  /* seven principles wheel */
+  .wheel-dots{position:absolute;inset:-6%;width:112%;height:112%;z-index:0;pointer-events:none;}
+  .wheel-center,.wheel-item{z-index:2;}
+  .wheel-ring{z-index:1;animation:spin 90s linear infinite;}
+  .wheel-center{animation:centerPulse 5s ease-in-out infinite;}
+  .wheel-item-content h3{transition:color .3s,text-shadow .3s;}
+  .wheel-item-content p{transition:color .3s;}
+  .wheel-item-content:hover h3{color:var(--gold-soft);text-shadow:0 0 20px rgba(228,198,135,.65);}
+  .wheel-item-content:hover p{color:rgba(242,234,217,.96);}
+  /* golden rule cards */
+  .gr-card{transition:transform .35s ease,background .35s,border-color .35s,box-shadow .35s;animation:floatCard 5.5s ease-in-out infinite;will-change:transform;}
+  .gr-card:nth-child(2){animation-delay:-.7s}.gr-card:nth-child(3){animation-delay:-1.4s}.gr-card:nth-child(4){animation-delay:-2.1s}.gr-card:nth-child(5){animation-delay:-2.8s}.gr-card:nth-child(6){animation-delay:-3.5s}.gr-card:nth-child(7){animation-delay:-4.2s}.gr-card:nth-child(8){animation-delay:-.4s}.gr-card:nth-child(9){animation-delay:-1.1s}.gr-card:nth-child(10){animation-delay:-2.6s}
+  .gr-icon{transition:box-shadow .35s,transform .35s;}
+  .gr-card:hover{animation:none;transform:translateY(-10px) scale(1.025);background:rgba(199,154,75,.12);border-color:var(--gold);box-shadow:0 20px 46px rgba(0,0,0,.42);}
+  .gr-card:hover .gr-icon{box-shadow:0 0 26px rgba(228,198,135,.7);transform:scale(1.08);}
+  /* ground rule cards */
+  .rule-card{transition:transform .35s ease,background .35s,border-color .35s,box-shadow .35s;animation:floatCard 6s ease-in-out infinite;will-change:transform;}
+  .rule-card:nth-child(2){animation-delay:-1.2s}.rule-card:nth-child(3){animation-delay:-2.4s}
+  .rule-glyph{transition:color .35s,text-shadow .35s,transform .35s;}
+  .rule-card:hover{animation:none;transform:translateY(-10px) scale(1.03);background:rgba(199,154,75,.1);border-color:var(--gold);box-shadow:0 20px 46px rgba(0,0,0,.42);}
+  .rule-card:hover .rule-glyph{color:var(--gold-soft);text-shadow:0 0 20px rgba(228,198,135,.6);transform:scale(1.15);}
+  /* books: float + page-fold on hover */
+  .reading-reel .book-plate{transition:transform .55s cubic-bezier(.2,.8,.2,1),box-shadow .55s;transform-origin:left center;will-change:transform;animation:floaty-sm 7s ease-in-out infinite;}
+  .reading-reel .book-plate:nth-child(2){animation-delay:-1.4s}.reading-reel .book-plate:nth-child(3){animation-delay:-2.8s}.reading-reel .book-plate:nth-child(4){animation-delay:-4.2s}
+  .reading-reel .book-plate:hover{animation:none;transform:perspective(1300px) rotateY(-16deg) translateY(-6px);box-shadow:30px 22px 54px rgba(0,0,0,.5);}
+  .book-plate::after{content:'';position:absolute;top:0;right:0;width:0;height:0;border-style:solid;border-width:0 0 26px 26px;border-color:transparent transparent rgba(199,154,75,.45) transparent;transition:border-width .45s ease,border-color .45s ease;}
+  .reading-reel .book-plate:hover::after{border-width:0 0 48px 48px;border-color:transparent transparent var(--gold-soft) transparent;}
+  @media (prefers-reduced-motion:reduce){
+    .tradition-chip,.ripple-diagram,.wheel-center,.wheel-ring,.gr-card,.rule-card,.reading-reel .book-plate{animation:none !important;}
+    .wheel-dots{display:none;}
+  }
 </style>
 </head>
 <body>
@@ -926,6 +975,7 @@
     </div>
 
     <div class="wheel-outer" role="list" aria-label="Los Siete Principios">
+      <canvas class="wheel-dots" aria-hidden="true"></canvas>
       <div class="wheel-ring" aria-hidden="true"></div>
       <div class="wheel-center"><span>Siete Principios,<br>Una Sola Mesa</span></div>
 
@@ -1222,5 +1272,30 @@
 })();
 </script>
 
+
+<script>
+/* antigravity dots behind the seven-principles wheel */
+(function(){
+  var cv=document.querySelector('.wheel-dots'); if(!cv||!cv.getContext) return;
+  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  var ctx=cv.getContext('2d'), DPR=Math.min(window.devicePixelRatio||1,2), W=2,H=2, pts=[], raf=null;
+  function size(){ var r=cv.getBoundingClientRect(); if(r.width<2){return;} W=cv.width=Math.round(r.width*DPR); H=cv.height=Math.round(r.height*DPR);
+    var n=Math.round((r.width*r.height)/9000); n=Math.max(24,Math.min(70,n)); pts=[];
+    for(var i=0;i<n;i++){pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.12*DPR,vy:(-Math.random()*.16-.03)*DPR,r:(Math.random()*1.6+.6)*DPR,a:Math.random()*.5+.25});}
+  }
+  function draw(){ ctx.clearRect(0,0,W,H); var md=(70*DPR)*(70*DPR);
+    for(var i=0;i<pts.length;i++){var p=pts[i];p.x+=p.vx;p.y+=p.vy; if(p.y<-12)p.y=H+12; if(p.x<-12)p.x=W+12; if(p.x>W+12)p.x=-12;
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.283);ctx.fillStyle='rgba(228,198,135,'+p.a+')';ctx.fill();}
+    for(var i=0;i<pts.length;i++){for(var j=i+1;j<pts.length;j++){var dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=dx*dx+dy*dy;
+      if(d<md){ctx.strokeStyle='rgba(199,154,75,'+(.12*(1-d/md))+')';ctx.lineWidth=DPR*.5;ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.stroke();}}}
+    raf=requestAnimationFrame(draw);
+  }
+  function start(){ if(!raf){ size(); draw(); } }
+  function stop(){ if(raf){cancelAnimationFrame(raf);raf=null;} }
+  if('IntersectionObserver' in window){ new IntersectionObserver(function(e){ e[0].isIntersecting?start():stop(); },{threshold:0}).observe(cv); }
+  else start();
+  var rt; window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){stop();start();},200);});
+})();
+</script>
 </body>
 </html>
